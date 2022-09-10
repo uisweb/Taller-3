@@ -1,0 +1,12 @@
+.container {
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+select {
+    color: #6C757D;
+}
+
+option {
+    color: #6C757D;
+}
