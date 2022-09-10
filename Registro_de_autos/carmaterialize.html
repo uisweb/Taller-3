@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <h2>Formulario de Registro Automotor</h2>
+    <div class="row">
+        <div class="col s3">
+            <form action="" method="post">
+                <input placeholder="Tipo de Coche" id="id_coche"></input>
+                <select name="" id="">
+                    <option value="">Elegir una opción</option>
+                    <option value="gas natural">Gas natural</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diésel">Diésel</option>
+                    <option value="electricidad">Electricidad</option>
+                </select>
+
+                <select name="tipocoche" id="tipocoche">
+                    <option value="">Elegir una opción</option>
+                    <option value="Urbano">Urbano</option>
+                    <option value="Familiar">Familiar</option>
+                    <option value="Sedán">Sedán</option>
+                    <option value="Deportivo">Deportivos</option>
+                    <option value="Todoterreno">Todo terreno</option>
+                    <option value="Limusina">Limusina</option>
+                </select>
+
+                <select name="estado" id="estado">
+                    <option value="" >Elegir una opción</option>
+                    <option value="usado">Usado</option>
+                    <option value="nuevo">Nuevo</option>
+                </select>
+
+                <select name="marca" id="marca">
+                    <option value="">Elegir una opción</option>
+                    <option value="renault">Renault</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="ford">Ford</option>
+                    <option value="hyundai">Hyundai</option>
+                </select>
+
+                <select name="usr" id="usr">
+                    <option value="">Elegir una opción</option>
+                    <option value="nuevo">Nuevo</option>
+                    <option value="antiguo">Antiguo</option>
+                </select>
+                <input placeholder="Modelo del Coche"></input>
+                <input placeholder="Año"></input>
+                <input placeholder="Detalles"></input>
+                <input placeholder="Tipo de Caja"></input>
+                <input placeholder="Motor"></input>
+                <input type="date" id="data"></input>
+                <input placeholder="Precio"></input>
+                <input placeholder="Moneda"></input>
+                <textarea class="materialize-textarea" name="pic01" id="pic01" cols="30" rows="7" maxlength="300"></textarea>
+                <textarea class="materialize-textarea" name="pic02" id="pic01" cols="30" rows="7" maxlength="300"></textarea>
+                <textarea class="materialize-textarea" name="pic03" id="pic01" cols="30" rows="7" maxlength="300"></textarea>
+                <textarea class="materialize-textarea" name="pic04" id="destaca" cols="30" rows="7" maxlength="300"></textarea>
+                <input type="submit" value="Enviar" class="waves-effect waves-light btn"></input>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var elems = document.querySelectorAll("select");
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+
+</html>
